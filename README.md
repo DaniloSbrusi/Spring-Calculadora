@@ -11,9 +11,10 @@ Um pequeno projeto Spring REST para cálculos matemáticos básicos
 - Potenciação
 - Raiz Quadrada
 
+## Endpoints
 Há suporte de dois recursos para cada operação, onde os valores podem ser informados de forma diferente:
-- como Parâmetros de consulta (Request Param)
-- como Parâmetros de caminho (Path Variable)
+- como parâmetros de consulta (Request Param)
+- como parâmetros de caminho (Path Variable)
 
 ## Como testar?
 1. Faça um git clone desse repositório
@@ -21,12 +22,13 @@ Há suporte de dois recursos para cada operação, onde os valores podem ser inf
 3. Faça requisições para a URL "http://localhost:8080/api/calculadora/" seguida do nome do recurso e os parâmetros
 
 ### Exemplos de URI
-> "http://localhost:8080/api/calculadora/somar?num1=2&num2=4,3"
-> "http://localhost:8080/api/calculadora/somar/10,8/58"
-> "http://localhost:8080/api/calculadora/potenciacao?num1=12&num2=3"
-> "http://localhost:8080/api/calculadora/raiz-quadrada/16"
+- "http://localhost:8080/api/calculadora/somar?num1=2&num2=4,3"
+- "http://localhost:8080/api/calculadora/somar/10,8/58"
+- "http://localhost:8080/api/calculadora/potenciacao?num1=12&num2=3"
+- "http://localhost:8080/api/calculadora/raiz-quadrada/16"
 
-Alguns erros frequentes foram tratados como:
+## Tratamento de erros
+Alguns erros frequentes foram tratados:
 - Separador decimal vírgula/ponto
 - Divisão por zero
 - Raiz quadrada negativa
